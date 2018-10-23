@@ -59,6 +59,7 @@ public class e_MessagesActivity_1 extends Activity {
     super.onResume();
 
     //...
+    //timer.scheduleAtFixedRate(new fetchNewMessagesTimerTask(),10,10);
 
   }
 
@@ -67,6 +68,7 @@ public class e_MessagesActivity_1 extends Activity {
     super.onPause();
 
     //...
+    //timer.cancel();
 
   }
 
@@ -82,9 +84,8 @@ public class e_MessagesActivity_1 extends Activity {
     protected List<Message> doInBackground(Integer... userIds) {
 
       //...
+      return RPC.retrieveMessages(userIds[0], userIds[1]);
 
-      //remove this sentence on completing the code:
-      return null;
     }
 
     @Override
@@ -96,7 +97,9 @@ public class e_MessagesActivity_1 extends Activity {
         toastShow(all_messages.size()+" messages downloaded");
 
         //...
-
+        adapter = new MyAdapter_messages(e_MessagesActivity_1.this, all_messages, globalState.my_user);
+        conversation = (ListView)findViewById(R.id.conversation);
+        conversation.setAdapter(adapter);
       }
     }
   }
@@ -170,6 +173,7 @@ public class e_MessagesActivity_1 extends Activity {
     public void run() {
 
       //...
+      new fetchNewMessages_Task();
 
     }
   }

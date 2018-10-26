@@ -50,6 +50,7 @@ public class e_MessagesActivity_1 extends Activity {
     TextView title = (TextView) findViewById(R.id.title);
     title.setText("Talking with: " + globalState.user_to_talk_to.getName());
     setup_input_text();
+    timer = new Timer();
 
     new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
   }
@@ -59,7 +60,7 @@ public class e_MessagesActivity_1 extends Activity {
     super.onResume();
 
     //...
-    //timer.scheduleAtFixedRate(new fetchNewMessagesTimerTask(),10,10);
+    timer.scheduleAtFixedRate(new fetchNewMessagesTimerTask(),10000,10000);
 
   }
 
@@ -68,7 +69,7 @@ public class e_MessagesActivity_1 extends Activity {
     super.onPause();
 
     //...
-    //timer.cancel();
+    timer.cancel();
 
   }
 
@@ -110,9 +111,10 @@ public class e_MessagesActivity_1 extends Activity {
     protected List<Message> doInBackground(Integer... userIds) {
 
       //...
-
-      //remove this sentence on completing the code:
-      return null;
+      if (adapter.isEmpty())
+        return RPC.retrieveMessages(userIds[0], userIds[1]);
+      else
+        return RPC.retrieveNewMessages(userIds[0], userIds[1], adapter.getLastMessage());
     }
 
     @Override
@@ -123,6 +125,8 @@ public class e_MessagesActivity_1 extends Activity {
         toastShow(new_messages.size()+" new message/s downloaded");
 
         //...
+        adapter.addMessages(new_messages);
+        adapter.notifyDataSetChanged();
 
       }
     }
@@ -131,6 +135,13 @@ public class e_MessagesActivity_1 extends Activity {
   public void sendText(final View view) {
 
     //...
+    Message msg = new Message();
+    msg.setContent(input_text.getText().toString());
+    msg.setUserSender(globalState.my_user);
+    msg.setUserReceiver(globalState.user_to_talk_to);
+    msg.setDate(new Date());
+
+    new SendMessage_Task().execute(msg);
 
     input_text.setText("");
 
@@ -149,9 +160,7 @@ public class e_MessagesActivity_1 extends Activity {
     protected Boolean doInBackground(Message... messages) {
 
       //...
-
-      //remove this sentence on completing the code:
-      return false;
+      return RPC.postMessage(messages[0]);
     }
 
     @Override
@@ -160,6 +169,7 @@ public class e_MessagesActivity_1 extends Activity {
         toastShow("message sent");
 
         //...
+        new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
 
       } else {
         toastShow("There's been an error sending the message");
@@ -173,7 +183,7 @@ public class e_MessagesActivity_1 extends Activity {
     public void run() {
 
       //...
-      new fetchNewMessages_Task();
+      new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
 
     }
   }

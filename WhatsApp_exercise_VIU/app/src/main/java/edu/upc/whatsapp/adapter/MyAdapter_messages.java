@@ -101,7 +101,7 @@ public class MyAdapter_messages extends BaseAdapter {
   public int getItemViewType(int position) {
 
     //...
-    if (messages.get(position).getUserSender() == my_user)
+    if (messages.get(position).getUserSender().getId() == my_user.getId())
       return 0;
     else
       return 1;

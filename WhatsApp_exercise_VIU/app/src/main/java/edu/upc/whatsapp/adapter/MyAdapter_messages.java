@@ -57,6 +57,11 @@ public class MyAdapter_messages extends BaseAdapter {
     return messages.get(messages.size() - 1);
   }
 
+  public Message getMessage(int position)
+  {
+      return messages.get(position);
+  }
+
   public int getCount() {
     return messages.size();
   }
@@ -114,7 +119,10 @@ public class MyAdapter_messages extends BaseAdapter {
 
   @Override
   public boolean isEnabled(int position) {
-    return false;
+    if (getItemViewType(position) == 0)
+        return true;
+    else
+        return false;
   }
 
   private void set_date_visibility(Message message) {

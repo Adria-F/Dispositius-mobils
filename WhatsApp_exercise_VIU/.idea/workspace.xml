@@ -31,12 +31,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="e_MessagesActivity_1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="e_MessagesActivity_1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-438">
-              <caret line="107" column="16" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+            <state relative-caret-position="361">
+              <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
               <folding>
+                <element signature="e#3070#3224#0" expanded="true" />
+                <element signature="e#3275#4423#0" expanded="true" />
+                <element signature="e#3785#4348#0" expanded="true" />
+                <element signature="e#4347#4348#0" expanded="true" />
+                <element signature="e#4422#4423#0" expanded="true" />
+                <element signature="e#5252#5418#0" expanded="true" />
+                <element signature="e#5417#5418#0" expanded="true" />
+                <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+                <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+                <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
                 <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
                 <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
               </folding>
@@ -44,10 +54,62 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MyAdapter_messages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+              <folding>
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1465#1466#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+                <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+                <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+                <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b_LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c_RegistrationActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="67" column="3" lean-forward="false" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_message.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_message.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DateSerializerDeserializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="986">
               <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
               <folding />
             </state>
@@ -64,24 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyAdapter_messages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-              <folding>
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1465#1466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="e_messages.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="e_messages.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -91,6 +140,14 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -2117,9 +2174,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_whatsapp_left_bubble.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_users.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml" />
       </list>
     </option>
   </component>
@@ -2144,10 +2202,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2182,18 +2239,19 @@
               <item name="WhatsApp_exercise_VIU" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="Nexus_S_API_22" />
+    <property name="device.picker.selection" value="Nexus_S_API_22_2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
@@ -2375,6 +2433,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2383,7 +2442,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2392,13 +2451,12 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113483146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2406,6 +2464,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2413,7 +2472,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2423,6 +2482,157 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#3070#3224#0" expanded="true" />
+            <element signature="e#3275#4423#0" expanded="true" />
+            <element signature="e#3785#4348#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#5252#5418#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_message.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding>
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="107" column="16" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+          <folding>
+            <element signature="e#3070#3224#0" expanded="true" />
+            <element signature="e#3275#4423#0" expanded="true" />
+            <element signature="e#3785#4348#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#5252#5418#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding>
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3070#3224#0" expanded="true" />
+            <element signature="e#3275#4423#0" expanded="true" />
+            <element signature="e#3785#4348#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#5252#5418#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
             <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
             <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
           </folding>
@@ -2452,6 +2662,12 @@
           <folding>
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2471,7 +2687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2491,6 +2706,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#3070#3224#0" expanded="true" />
+            <element signature="e#3275#4423#0" expanded="true" />
+            <element signature="e#3785#4348#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#5252#5418#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
             <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
             <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
           </folding>
@@ -2520,6 +2745,12 @@
           <folding>
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2539,7 +2770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2611,19 +2841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2631,40 +2852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <marker date="1539074967698" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1539074967698" expanded="false" signature="165:176" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="212:218" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="254:265" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="301:307" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="338:349" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="385:391" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="440:451" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="487:493" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="547:558" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="594:600" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="653:664" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="700:706" ph=" }" />
-            <marker date="1539074967698" expanded="true" signature="774:826" ph="{...}" />
-            <marker date="1539074967698" expanded="true" signature="898:950" ph="{...}" />
-            <marker date="1539074967698" expanded="true" signature="1029:1081" ph="{...}" />
-            <marker date="1539074967698" expanded="true" signature="1164:1216" ph="{...}" />
-            <marker date="1539074967698" expanded="false" signature="1242:1253" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="1289:1295" ph=" }" />
-            <marker date="1539074967698" expanded="false" signature="1319:1330" ph=" { " />
-            <marker date="1539074967698" expanded="false" signature="1366:1372" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="107" column="16" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-          <folding>
-            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2680,7 +2867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2737">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2713,32 +2899,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="986">
           <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_message.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/extra_code.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/extra_code.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_message.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="67" column="3" lean-forward="false" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/a_WelcomeActivity_persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/a_WelcomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        <state relative-caret-position="590">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
           <folding>
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="method#getView#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#getItemViewType#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#isEnabled#0;class#MyAdapter_messages#0" expanded="false" />
+            <element signature="method#set_date_visibility#0;class#MyAdapter_messages#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="361">
+          <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+          <folding>
+            <element signature="e#3070#3224#0" expanded="true" />
+            <element signature="e#3275#4423#0" expanded="true" />
+            <element signature="e#3785#4348#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#5252#5418#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
+            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
   </component>

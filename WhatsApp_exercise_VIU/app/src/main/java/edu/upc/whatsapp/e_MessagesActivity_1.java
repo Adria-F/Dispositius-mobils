@@ -9,14 +9,17 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.ViewTreeObserver;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
@@ -101,6 +104,46 @@ public class e_MessagesActivity_1 extends Activity {
         adapter = new MyAdapter_messages(e_MessagesActivity_1.this, all_messages, globalState.my_user);
         conversation = (ListView)findViewById(R.id.conversation);
         conversation.setAdapter(adapter);
+        conversation.post(new Runnable() {
+          @Override
+          public void run() {
+            conversation.setSelection(conversation.getCount()-1);
+          }
+        });
+        conversation.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+          @Override
+          public boolean onItemLongClick(final AdapterView<?> adapterView, View view, final int position, long id) {
+
+            final Message selected_message = ((MyAdapter_messages) adapterView.getAdapter()).getMessage(position);
+
+            final PopupMenu popup = new PopupMenu(e_MessagesActivity_1.this, view);
+            popup.getMenuInflater().inflate(R.menu.menu_message, popup.getMenu());
+            popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+              public boolean onMenuItemClick(MenuItem item) {
+                if(item.getTitle().equals("Delete")){
+                  toastShow("deleting message...");
+
+                  //...
+
+                }
+                if(item.getTitle().equals("Forward")){
+                  toastShow("forwarding message...");
+
+                  //...
+
+                }
+                if(item.getTitle().equals("Modify")){
+
+                  //...
+
+                }
+                return true;
+              }
+            });
+            popup.show();
+            return true;
+          }
+        });
       }
     }
   }
@@ -127,7 +170,14 @@ public class e_MessagesActivity_1 extends Activity {
         //...
         adapter.addMessages(new_messages);
         adapter.notifyDataSetChanged();
-
+        if (new_messages.size() > 0) {
+          conversation.post(new Runnable() {
+            @Override
+            public void run() {
+              conversation.setSelection(conversation.getCount() - 1);
+            }
+          });
+        }
       }
     }
   }
@@ -261,5 +311,7 @@ public class e_MessagesActivity_1 extends Activity {
     toast.setGravity(0, 0, 200);
     toast.show();
   }
+
+
 
 }

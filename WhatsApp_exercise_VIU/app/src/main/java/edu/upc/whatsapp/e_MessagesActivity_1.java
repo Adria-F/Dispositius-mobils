@@ -45,6 +45,8 @@ public class e_MessagesActivity_1 extends Activity {
 
   private Timer timer;
 
+  private Message messageToModify;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -54,6 +56,7 @@ public class e_MessagesActivity_1 extends Activity {
     title.setText("Talking with: " + globalState.user_to_talk_to.getName());
     setup_input_text();
     timer = new Timer();
+
 
     new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
   }
@@ -123,7 +126,7 @@ public class e_MessagesActivity_1 extends Activity {
                 if(item.getTitle().equals("Delete")){
                   toastShow("deleting message...");
 
-                  //...
+                  new DeleteMessage_Task().execute(selected_message);
 
                 }
                 if(item.getTitle().equals("Forward")){
@@ -135,6 +138,7 @@ public class e_MessagesActivity_1 extends Activity {
                 if(item.getTitle().equals("Modify")){
 
                   //...
+                  messageToModify = selected_message;
 
                 }
                 return true;
@@ -168,15 +172,20 @@ public class e_MessagesActivity_1 extends Activity {
         toastShow(new_messages.size()+" new message/s downloaded");
 
         //...
-        adapter.addMessages(new_messages);
-        adapter.notifyDataSetChanged();
-        if (new_messages.size() > 0) {
-          conversation.post(new Runnable() {
-            @Override
-            public void run() {
-              conversation.setSelection(conversation.getCount() - 1);
-            }
-          });
+
+        if (new_messages.size() > 0 && new_messages.get(0).getId() == -1)
+            new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
+        else {
+          adapter.addMessages(new_messages);
+          adapter.notifyDataSetChanged();
+          if (new_messages.size() > 0) {
+            conversation.post(new Runnable() {
+              @Override
+              public void run() {
+                conversation.setSelection(conversation.getCount() - 1);
+              }
+            });
+          }
         }
       }
     }
@@ -185,13 +194,19 @@ public class e_MessagesActivity_1 extends Activity {
   public void sendText(final View view) {
 
     //...
-    Message msg = new Message();
-    msg.setContent(input_text.getText().toString());
-    msg.setUserSender(globalState.my_user);
-    msg.setUserReceiver(globalState.user_to_talk_to);
-    msg.setDate(new Date());
 
-    new SendMessage_Task().execute(msg);
+    if(messageToModify!=null){
+
+    }
+    else {
+      Message msg = new Message();
+      msg.setContent(input_text.getText().toString());
+      msg.setUserSender(globalState.my_user);
+      msg.setUserReceiver(globalState.user_to_talk_to);
+      msg.setDate(new Date());
+
+      new SendMessage_Task().execute(msg);
+    }
 
     input_text.setText("");
 
@@ -226,6 +241,34 @@ public class e_MessagesActivity_1 extends Activity {
       }
     }
   }
+
+    private class DeleteMessage_Task extends AsyncTask<Message, Void, Boolean> {
+
+        @Override
+        protected void onPreExecute() {
+            toastShow("deleting message");
+        }
+
+        @Override
+        protected Boolean doInBackground(Message... messages) {
+
+            //...
+            return RPC.deleteMessage(messages[0]);
+        }
+
+        @Override
+        protected void onPostExecute(Boolean resultOk) {
+            if (resultOk) {
+                toastShow("message deleted");
+
+                //...
+                new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
+
+            } else {
+                toastShow("There's been an error deleting the message");
+            }
+        }
+    }
 
   private class fetchNewMessagesTimerTask extends TimerTask {
 

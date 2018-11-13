@@ -50,6 +50,7 @@ public class MyAdapter_messages extends BaseAdapter {
       set_date_visibility(new_message);
     }
   }
+
   public boolean isEmpty(){
     return messages.isEmpty();
   }

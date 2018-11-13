@@ -202,4 +202,38 @@ public class RPC {
       return null;
     }
   }
+  public static boolean deleteMessage(Message message) {
+    try {
+      URL url = new URL(url_rpc+"/7_delete_message.jsp");
+      HttpURLConnection ucon = (HttpURLConnection) url.openConnection();
+      ucon.setRequestMethod("POST");
+      ucon.setDoInput(true);
+      ucon.setDoOutput(true);
+      ucon.setConnectTimeout(TIMEOUT);
+      ucon.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+      ucon.setRequestProperty("Accept", "application/json; charset=utf-8");
+
+      PrintWriter out = new PrintWriter(ucon.getOutputStream(), true);
+      out.println(gson.toJson(message));
+
+      ucon.connect();
+
+      BufferedReader in = new BufferedReader(new InputStreamReader(ucon.getInputStream()));
+      String line;
+      System.out.println("reply:");
+      while ((line = in.readLine()) != null) {
+        System.out.println(line);
+      }
+
+      in.close();
+      out.close();
+      ucon.getInputStream().close();
+
+      return true;
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      return false;
+    }
+  }
 }

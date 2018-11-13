@@ -3,6 +3,7 @@ package util;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import entity.User;
+import entity.UserInfo;
 import entity.Message;
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,11 +21,13 @@ public class Global {
 
   public List<User> users;
   public List<Message> messages;
+  public List<UserInfo> usersToNotify;
 
   public Global() {
 
     users = new ArrayList<User>();
     messages = new ArrayList<Message>();
+    usersToNotify = new ArrayList<UserInfo>();
 
     File users_file = new File("users.txt");
 

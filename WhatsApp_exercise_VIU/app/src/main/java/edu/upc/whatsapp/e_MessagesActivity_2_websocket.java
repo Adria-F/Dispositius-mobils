@@ -114,6 +114,17 @@ public class e_MessagesActivity_2_websocket extends Activity {
       try {
 
         //...
+        String json=gson.toJson(globalState.my_user);
+        session.getBasicRemote().sendText(json);
+        e_MessagesActivity_2_websocket.this.session=session;
+        sendMessageToHandler("open","connection started");
+
+        session.addMessageHandler(new MessageHandler.Whole<String>() {
+          @Override
+          public void onMessage(String message) {
+            sendMessageToHandler("message",message);
+          }
+        });
 
       }
       catch (Exception e) {
@@ -152,11 +163,25 @@ public class e_MessagesActivity_2_websocket extends Activity {
       String content = msg.getData().getCharSequence("content").toString();
       if(type.equals("message")){
 
-        //...
+        Message message = gson.fromJson(content, Message.class);
 
+        if(message.getUserSender().getId()==globalState.user_to_talk_to.getId())
+        {
+          adapter.addMessage(message);
+          adapter.notifyDataSetChanged();
+          conversation.post(new Runnable() {
+            @Override
+            public void run() {
+              conversation.setSelection(conversation.getCount() - 1);
+            }
+          });
+        }
+        else {
+          toastShow(message.getUserSender().getName()+": "+message.getContent(), -330);
+        }
       }
       else{
-        toastShow(content);
+        toastShow(content, 200);
       }
     }
   };
@@ -166,28 +191,33 @@ public class e_MessagesActivity_2_websocket extends Activity {
     @Override
     protected void onPreExecute() {
       progressDialog = ProgressDialog.show(e_MessagesActivity_2_websocket.this,
-          "MessagesActivity", "downloading messages...");
+              "MessagesActivity", "downloading messages...");
     }
 
     @Override
     protected List<Message> doInBackground(Integer... userIds) {
 
-      //...
+      return RPC.retrieveMessages(userIds[0], userIds[1]);
 
-      //remove this sentence on completing the code:
-      return null;
     }
 
     @Override
     protected void onPostExecute(List<Message> all_messages) {
       progressDialog.dismiss();
       if (all_messages == null) {
-        toastShow("There's been an error downloading the messages");
+        toastShow("There's been an error downloading the messages", 200);
       } else {
-        toastShow(all_messages.size()+" messages downloaded");
+        toastShow(all_messages.size()+" messages downloaded", 200);
 
-        //...
-
+        adapter = new MyAdapter_messages(e_MessagesActivity_2_websocket.this, all_messages, globalState.my_user);
+        conversation = (ListView)findViewById(R.id.conversation);
+        conversation.setAdapter(adapter);
+        conversation.post(new Runnable() {
+          @Override
+          public void run() {
+            conversation.setSelection(conversation.getCount()-1);
+          }
+        });
       }
     }
   }
@@ -197,28 +227,46 @@ public class e_MessagesActivity_2_websocket extends Activity {
     @Override
     protected List<Message> doInBackground(Integer... userIds) {
 
-      //...
-
-      //remove this sentence on completing the code:
-      return null;
+      if (adapter.isEmpty())
+        return RPC.retrieveMessages(userIds[0], userIds[1]);
+      else
+        return RPC.retrieveNewMessages(userIds[0], userIds[1], adapter.getLastMessage());
     }
 
     @Override
     protected void onPostExecute(List<Message> new_messages) {
       if (new_messages == null) {
-        toastShow("There's been an error downloading new messages");
+        toastShow("There's been an error downloading new messages", 200);
       } else {
-        toastShow(new_messages.size()+" new message/s downloaded");
+        toastShow(new_messages.size()+" new message/s downloaded", 200);
 
-        //...
-
+        if (new_messages.size() > 0 && new_messages.get(0).getId() == -1)
+          new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
+        else {
+          adapter.addMessages(new_messages);
+          adapter.notifyDataSetChanged();
+          if (new_messages.size() > 0) {
+            conversation.post(new Runnable() {
+              @Override
+              public void run() {
+                conversation.setSelection(conversation.getCount() - 1);
+              }
+            });
+          }
+        }
       }
     }
   }
 
   public void sendText(final View view) {
 
-    //...
+    Message msg = new Message();
+    msg.setContent(input_text.getText().toString());
+    msg.setUserSender(globalState.my_user);
+    msg.setUserReceiver(globalState.user_to_talk_to);
+    msg.setDate(new Date());
+
+    new SendMessage_Task().execute(msg);
 
     input_text.setText("");
 
@@ -230,27 +278,24 @@ public class e_MessagesActivity_2_websocket extends Activity {
 
     @Override
     protected void onPreExecute() {
-      toastShow("sending message");
+      toastShow("sending message", 200);
     }
 
     @Override
     protected Boolean doInBackground(Message... messages) {
 
-      //...
-
-      //remove this sentence on completing the code:
-      return false;
+      return RPC.postMessage(messages[0]);
     }
 
     @Override
     protected void onPostExecute(Boolean resultOk) {
       if (resultOk) {
-        toastShow("message sent");
+        toastShow("message sent", 200);
 
-        //...
+        new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
 
       } else {
-        toastShow("There's been an error sending the message");
+        toastShow("There's been an error sending the message", 200);
       }
     }
   }
@@ -323,9 +368,9 @@ public class e_MessagesActivity_2_websocket extends Activity {
     });
   }
 
-  private void toastShow(String text) {
+  private void toastShow(String text, int yOffset) {
     Toast toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
-    toast.setGravity(0, 0, 200);
+    toast.setGravity(0, 0, yOffset);
     toast.show();
   }
 

@@ -23,13 +23,20 @@
         android:textSize="12dip"
         android:visibility="gone"/>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/row_date"
+        android:background="@drawable/bubble_yellow" >
+
     <TextView
         android:id="@+id/row_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/row_date"
-        android:background="@drawable/bubble_yellow"
         android:textColor="@color/black"
         android:textSize="12dip"/>
 
@@ -37,14 +44,12 @@
         android:id="@+id/row_hour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/row_content"
-        android:layout_marginLeft="10dip"
-        android:layout_toRightOf="@id/row_content"
         android:paddingBottom="5dip"
         android:paddingTop="5dip"
         android:text="the hour"
         android:textColor="@color/black"
         android:textSize="12dip"/>
+    </LinearLayout>
 
 </RelativeLayout> 
 

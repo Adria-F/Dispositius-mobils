@@ -80,6 +80,7 @@ public class c_RegistrationActivity extends Activity implements View.OnClickList
         toastShow("Registration successful");
         globalState.my_user = userInfo;
         startActivity(new Intent(c_RegistrationActivity.this, d_UsersListActivity.class));
+        startService(new Intent(c_RegistrationActivity.this, PushService.class));
         finish();
       }
       else if (userInfo.getId() == -1) {

@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -159,6 +160,17 @@ public class PushService extends Service {
       try {
 
         //...
+        String json=gson.toJson(globalState.my_user);
+        session.getBasicRemote().sendText(json);
+        PushService.this.session=session;
+        sendMessageToHandler("open","connection started");
+
+        session.addMessageHandler(new MessageHandler.Whole<String>() {
+          @Override
+          public void onMessage(String message) {
+            sendMessageToHandler("message",message);
+          }
+        });
 
       }
       catch (Exception e) {
@@ -202,6 +214,15 @@ public class PushService extends Service {
       if(type.equals("message")){
 
         //...
+        Message message = gson.fromJson(content, Message.class);
+        Intent intent = new Intent();
+        intent.setAction("edu.upc.whatsapp.newMessage");
+        intent.putExtra("message", content);
+        sendBroadcast(intent);
+        if (!globalState.MessagesActivity_visible || globalState.user_to_talk_to.getId() != message.getUserSender().getId())
+        {
+          sendPushNotification(PushService.this, message.getContent(), message.getUserSender().getName(), content);
+        }
 
       }
       else{
@@ -210,7 +231,7 @@ public class PushService extends Service {
     }
   };
   
-  private void sendPushNotification(Context context, String content, String json_msg){
+  private void sendPushNotification(Context context, String content, String userSender, String json_msg){
 
     Intent mIntent = new Intent(context, e_MessagesActivity_3_broadcast_receiver.class);
     mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -220,7 +241,7 @@ public class PushService extends Service {
     PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, mIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 
     Notification.Builder mBuilder = new Notification.Builder(context)
-      .setContentTitle("_WhatsApp")
+      .setContentTitle(userSender)
       .setContentText(content)
       .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.app_logo))
       .setContentIntent(pendingIntent)

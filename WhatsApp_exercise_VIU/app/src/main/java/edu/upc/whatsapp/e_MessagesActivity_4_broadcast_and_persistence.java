@@ -37,7 +37,6 @@ import static edu.upc.whatsapp.comms.Comms.gson;
 public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
 
   _GlobalState globalState;
-  private BroadcastReceiver broadcastReceiver;
   ProgressDialog progressDialog;
   private ListView conversation;
   private MyAdapter_messages adapter;
@@ -45,6 +44,8 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
   private Button button;
   private InputMethodManager inMgr;
   private boolean enlarged = false, shrunk = true;
+
+  private BroadcastReceiver broadcastReceiver;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,10 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     if(intent.getExtras()!=null && intent.getExtras().get("message")!=null){
 
       //...
-
+      String json = (String)intent.getExtras().get("message");
+      Message message = gson.fromJson(json, Message.class);
+      globalState.user_to_talk_to = message.getUserSender();
+      globalState.save_new_message(message);
     }
 
     TextView title = (TextView) findViewById(R.id.title);
@@ -69,21 +73,47 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
       public void onReceive(Context arg0, Intent arg1) {
 
         //...
-
+        String json = (String)arg1.getExtras().get("message");
+        Message message = gson.fromJson(json, Message.class);
+        if (globalState.user_to_talk_to.getId() == message.getUserSender().getId()) {
+          adapter.addMessage(message);
+          globalState.save_new_message(message);
+          adapter.notifyDataSetChanged();
+          conversation.post(new Runnable() {
+            @Override
+            public void run() {
+              conversation.setSelection(conversation.getCount() - 1);
+            }
+          });
+        }
+        else
+        {
+          toastShow(message.getUserSender().getName()+": "+message.getContent(), -330);
+        }
       }
     };
     IntentFilter intentFilter = new IntentFilter("edu.upc.whatsapp.newMessage");
     registerReceiver(broadcastReceiver, intentFilter);
 
-    if(globalState.isThere_messages()) {
+    if (globalState.isThere_messages())
+    {
+        List<Message> messages = globalState.load_messages();
+        adapter = new MyAdapter_messages(e_MessagesActivity_4_broadcast_and_persistence.this, messages, globalState.my_user);
+        conversation = (ListView)findViewById(R.id.conversation);
+        conversation.setAdapter(adapter);
+        conversation.post(new Runnable() {
+            @Override
+            public void run() {
+                conversation.setSelection(conversation.getCount()-1);
+            }
+        });
+        toastShow(messages.size()+" messages loaded",200);
 
-      //...
-
+      new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
     }
-    else{
-
-      //...
-
+    else
+    {
+        new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
     }
   }
 
@@ -92,6 +122,8 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     super.onResume();
 
     //...
+    super.onResume();
+    globalState.MessagesActivity_visible = true;
 
   }
 
@@ -100,6 +132,8 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     super.onPause();
 
     //...
+    super.onPause();
+    globalState.MessagesActivity_visible = false;
 
   }
 
@@ -116,28 +150,36 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     @Override
     protected void onPreExecute() {
       progressDialog = ProgressDialog.show(e_MessagesActivity_4_broadcast_and_persistence.this,
-          "MessagesActivity", "downloading messages...");
+              "MessagesActivity", "downloading messages...");
     }
 
     @Override
     protected List<Message> doInBackground(Integer... userIds) {
 
       //...
+      return RPC.retrieveMessages(userIds[0], userIds[1]);
 
-      //remove this sentence on completing the code:
-      return null;
     }
 
     @Override
     protected void onPostExecute(List<Message> all_messages) {
       progressDialog.dismiss();
       if (all_messages == null) {
-        toastShow("There's been an error downloading the messages");
+        toastShow("There's been an error downloading the messages",200);
       } else {
-        toastShow(all_messages.size()+" messages downloaded");
+        toastShow(all_messages.size()+" messages downloaded",200);
 
         //...
-
+          globalState.save_new_messages(all_messages);
+        adapter = new MyAdapter_messages(e_MessagesActivity_4_broadcast_and_persistence.this, all_messages, globalState.my_user);
+        conversation = (ListView)findViewById(R.id.conversation);
+        conversation.setAdapter(adapter);
+        conversation.post(new Runnable() {
+          @Override
+          public void run() {
+            conversation.setSelection(conversation.getCount()-1);
+          }
+        });
       }
     }
   }
@@ -148,20 +190,34 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     protected List<Message> doInBackground(Integer... userIds) {
 
       //...
-
-      //remove this sentence on completing the code:
-      return null;
+      if (adapter.isEmpty())
+        return RPC.retrieveMessages(userIds[0], userIds[1]);
+      else
+        return RPC.retrieveNewMessages(userIds[0], userIds[1], adapter.getLastMessage());
     }
 
     @Override
     protected void onPostExecute(List<Message> new_messages) {
       if (new_messages == null) {
-        toastShow("There's been an error downloading new messages");
+        toastShow("There's been an error downloading new messages", 200);
       } else {
-        toastShow(new_messages.size()+" new message/s downloaded");
+        toastShow(new_messages.size()+" new message/s downloaded", 200);
 
         //...
 
+        if (new_messages.size() > 0 && new_messages.get(0).getId() == -1)
+          new fetchAllMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
+        else if (new_messages.size() > 0) {
+          globalState.save_new_messages(new_messages);
+          adapter.addMessages(new_messages);
+          adapter.notifyDataSetChanged();
+          conversation.post(new Runnable() {
+            @Override
+            public void run() {
+              conversation.setSelection(conversation.getCount() - 1);
+            }
+          });
+        }
       }
     }
   }
@@ -169,6 +225,14 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
   public void sendText(final View view) {
 
     //...
+
+    Message msg = new Message();
+    msg.setContent(input_text.getText().toString());
+    msg.setUserSender(globalState.my_user);
+    msg.setUserReceiver(globalState.user_to_talk_to);
+    msg.setDate(new Date());
+
+    new SendMessage_Task().execute(msg);
 
     input_text.setText("");
 
@@ -180,27 +244,27 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
 
     @Override
     protected void onPreExecute() {
-      toastShow("sending message");
+      toastShow("sending message",200);
     }
 
     @Override
     protected Boolean doInBackground(Message... messages) {
 
       //...
-
-      //remove this sentence on completing the code:
-      return false;
+      return RPC.postMessage(messages[0]);
     }
 
     @Override
     protected void onPostExecute(Boolean resultOk) {
       if (resultOk) {
-        toastShow("message sent");
+        toastShow("message sent", 200);
 
         //...
 
+        new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
+
       } else {
-        toastShow("There's been an error sending the message");
+        toastShow("There's been an error sending the message", 200);
       }
     }
   }
@@ -273,9 +337,9 @@ public class e_MessagesActivity_4_broadcast_and_persistence extends Activity {
     });
   }
 
-  private void toastShow(String text) {
+  private void toastShow(String text, int yOffset) {
     Toast toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
-    toast.setGravity(0, 0, 200);
+    toast.setGravity(0, 0, yOffset);
     toast.show();
   }
 

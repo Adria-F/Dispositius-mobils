@@ -34,43 +34,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="e_MessagesActivity_3_broadcast_receiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_3_broadcast_receiver.java">
+      <file leaf-file-name="e_MessagesActivity_4_broadcast_and_persistence.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_4_broadcast_and_persistence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="92" column="78" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="78" />
+            <state relative-caret-position="399">
+              <caret line="211" column="10" lean-forward="false" selection-start-line="211" selection-start-column="10" selection-end-line="212" selection-end-column="41" />
               <folding>
-                <element signature="e#2231#2978#0" expanded="true" />
-                <element signature="e#2665#2831#0" expanded="true" />
-                <element signature="e#2830#2831#0" expanded="true" />
-                <element signature="e#2977#2978#0" expanded="true" />
-                <element signature="e#4716#4870#0" expanded="true" />
-                <element signature="e#4869#4870#0" expanded="true" />
-                <element signature="e#5920#6096#0" expanded="true" />
-                <element signature="e#6095#6096#0" expanded="true" />
-                <element signature="method#sendText#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
-                <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
-                <element signature="method#setup_input_text#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
-                <element signature="e#8219#8532#0" expanded="true" />
-                <element signature="e#8531#8532#0" expanded="true" />
-                <element signature="e#8666#9808#0" expanded="true" />
-                <element signature="e#9328#9494#0" expanded="true" />
-                <element signature="e#9493#9494#0" expanded="true" />
-                <element signature="e#9807#9808#0" expanded="true" />
+                <element signature="e#2265#3061#0" expanded="true" />
+                <element signature="e#2748#2914#0" expanded="true" />
+                <element signature="e#2913#2914#0" expanded="true" />
+                <element signature="e#3060#3061#0" expanded="true" />
+                <element signature="e#3568#3732#0" expanded="true" />
+                <element signature="e#3731#3732#0" expanded="true" />
+                <element signature="e#5602#5756#0" expanded="true" />
+                <element signature="e#5755#5756#0" expanded="true" />
+                <element signature="e#6847#7013#0" expanded="true" />
+                <element signature="e#7012#7013#0" expanded="true" />
+                <element signature="method#setup_input_text#0;class#e_MessagesActivity_4_broadcast_and_persistence#0" expanded="false" />
+                <element signature="e#9113#9426#0" expanded="true" />
+                <element signature="e#9425#9426#0" expanded="true" />
+                <element signature="e#9560#10702#0" expanded="true" />
+                <element signature="e#10222#10388#0" expanded="true" />
+                <element signature="e#10387#10388#0" expanded="true" />
+                <element signature="e#10701#10702#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PushService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java">
+      <file leaf-file-name="e_MessagesActivity_3_broadcast_receiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_3_broadcast_receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="243" column="34" lean-forward="true" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <element signature="e#6114#6958#0" expanded="true" />
-                <element signature="e#6957#6958#0" expanded="true" />
+                <element signature="method#sendText#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
+                <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
+                <element signature="method#setup_input_text#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_GlobalState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="106" column="48" lean-forward="false" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,8 +89,8 @@
       <file leaf-file-name="b_LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+            <state relative-caret-position="1020">
+              <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -88,32 +99,28 @@
       <file leaf-file-name="c_RegistrationActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="82" column="81" lean-forward="false" selection-start-line="82" selection-start-column="81" selection-end-line="82" selection-end-column="81" />
+            <state relative-caret-position="1105">
+              <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="e_MessagesActivity_2_websocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_2_websocket.java">
+      <file leaf-file-name="d_UsersListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="126" selection-end-column="11" />
-              <folding>
-                <element signature="method#onCreate#0;class#e_MessagesActivity_2_websocket#0" expanded="false" />
-                <element signature="method#onDestroy#0;class#e_MessagesActivity_2_websocket#0" expanded="false" />
-                <element signature="method#setup_input_text#0;class#e_MessagesActivity_2_websocket#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java">
+      <file leaf-file-name="PushService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="158" column="41" lean-forward="false" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="235" column="95" lean-forward="false" selection-start-line="235" selection-start-column="95" selection-end-line="235" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -132,6 +139,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>hour sen</find>
+      <find>messages downloaded</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2161,11 +2169,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_2_websocket.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_whatsapp_left_bubble.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_whatsapp_right_bubble.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_3_broadcast_receiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_4_broadcast_and_persistence.java" />
       </list>
     </option>
   </component>
@@ -2189,10 +2200,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2203,6 +2213,11 @@
             <path>
               <item name="WhatsApp_exercise_VIU" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="WhatsApp_exercise_VIU" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -2216,19 +2231,20 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="whatsapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="comms" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="Nexus_S_API_22_2" />
-    <property name="android.project.structure.last.selected" value="app" />
+    <property name="device.picker.selection" value="Nexus_S_API_22" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RunDashboard">
@@ -2409,7 +2425,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2417,21 +2432,22 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29325843" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12584269" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3516854" sideWeight="0.49755502" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20110025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.113483146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24877751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49325842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29325843" sideWeight="0.49755502" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2440,7 +2456,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2480,26 +2495,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/e_messages.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2507,7 +2507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2515,19 +2514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#onCreate#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onResume#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onPause#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchAllMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#DeleteMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2535,7 +2521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="65" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2543,7 +2528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2578,7 +2562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2586,19 +2569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#onCreate#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onResume#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onPause#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchAllMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#DeleteMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2606,7 +2576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="65" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2614,7 +2583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2649,7 +2617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2733,7 +2700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2761,14 +2727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="88" column="21" lean-forward="false" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -2783,7 +2741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="50" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2805,7 +2762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="44" lean-forward="false" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2816,15 +2772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="74" lean-forward="false" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2832,7 +2779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="568" column="18" lean-forward="false" selection-start-line="568" selection-start-column="18" selection-end-line="568" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2840,19 +2786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="242" selection-end-column="3" />
-          <folding>
-            <element signature="method#onCreate#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onResume#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#onPause#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchAllMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessages_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#sendText#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#DeleteMessage_Task#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="class#fetchNewMessagesTimerTask#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#setup_input_text#0;class#e_MessagesActivity_1#0" expanded="false" />
-            <element signature="method#toastShow#0;class#e_MessagesActivity_1#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2860,15 +2793,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="2448">
           <caret line="158" column="41" lean-forward="false" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2876,13 +2807,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="71" column="24" lean-forward="false" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_2_websocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
+        <state relative-caret-position="901">
           <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="126" selection-end-column="11" />
           <folding>
             <element signature="method#onCreate#0;class#e_MessagesActivity_2_websocket#0" expanded="false" />
@@ -2892,55 +2822,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+        <state relative-caret-position="1020">
+          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="82" column="81" lean-forward="false" selection-start-line="82" selection-start-column="81" selection-end-line="82" selection-end-column="81" />
+        <state relative-caret-position="1105">
+          <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_3_broadcast_receiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="92" column="78" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="78" />
+        <state relative-caret-position="357">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="e#2231#2978#0" expanded="true" />
-            <element signature="e#2665#2831#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
-            <element signature="e#2977#2978#0" expanded="true" />
-            <element signature="e#4716#4870#0" expanded="true" />
-            <element signature="e#4869#4870#0" expanded="true" />
-            <element signature="e#5920#6096#0" expanded="true" />
-            <element signature="e#6095#6096#0" expanded="true" />
             <element signature="method#sendText#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
             <element signature="class#SendMessage_Task#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
             <element signature="method#setup_input_text#0;class#e_MessagesActivity_3_broadcast_receiver#0" expanded="false" />
-            <element signature="e#8219#8532#0" expanded="true" />
-            <element signature="e#8531#8532#0" expanded="true" />
-            <element signature="e#8666#9808#0" expanded="true" />
-            <element signature="e#9328#9494#0" expanded="true" />
-            <element signature="e#9493#9494#0" expanded="true" />
-            <element signature="e#9807#9808#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="106" column="48" lean-forward="false" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="243" column="34" lean-forward="true" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
+        <state relative-caret-position="204">
+          <caret line="235" column="95" lean-forward="false" selection-start-line="235" selection-start-column="95" selection-end-line="235" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity_4_broadcast_and_persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="211" column="10" lean-forward="false" selection-start-line="211" selection-start-column="10" selection-end-line="212" selection-end-column="41" />
           <folding>
-            <element signature="e#6114#6958#0" expanded="true" />
-            <element signature="e#6957#6958#0" expanded="true" />
+            <element signature="e#2265#3061#0" expanded="true" />
+            <element signature="e#2748#2914#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#3060#3061#0" expanded="true" />
+            <element signature="e#3568#3732#0" expanded="true" />
+            <element signature="e#3731#3732#0" expanded="true" />
+            <element signature="e#5602#5756#0" expanded="true" />
+            <element signature="e#5755#5756#0" expanded="true" />
+            <element signature="e#6847#7013#0" expanded="true" />
+            <element signature="e#7012#7013#0" expanded="true" />
+            <element signature="method#setup_input_text#0;class#e_MessagesActivity_4_broadcast_and_persistence#0" expanded="false" />
+            <element signature="e#9113#9426#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9560#10702#0" expanded="true" />
+            <element signature="e#10222#10388#0" expanded="true" />
+            <element signature="e#10387#10388#0" expanded="true" />
+            <element signature="e#10701#10702#0" expanded="true" />
           </folding>
         </state>
       </provider>
